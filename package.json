@@ -1,0 +1,29 @@
+{
+  "name": "wp-code-tabs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && wp-scripts start src/editor.js src/index.js --output-path build",
+    "build": "wp-scripts build src/editor.js src/index.js --output-path build",
+    "build-docs": "jsdoc -c jsdoc.json -r"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^22.0.1",
+    "better-docs": "^2.7.2",
+    "classnames": "^2.3.1",
+    "jsdoc": "^3.6.10",
+    "jsdoc-react": "^1.0.0",
+    "memize": "^1.1.0",
+    "nodemon": "^2.0.15",
+    "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "@uiw/react-textarea-code-editor": "^2.0.1",
+    "react-simple-code-editor": "^0.11.0",
+    "react-tabs": "^4.2.0"
+  }
+}
